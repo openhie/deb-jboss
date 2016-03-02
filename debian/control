@@ -1,0 +1,14 @@
+Source: jboss
+Section: java
+Priority: optional
+Maintainer: keybase.io/ryanyates <ryanyates@keybase.io>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+Homepage: http://jbossas.jboss.org/
+
+Package: jboss
+Architecture: amd64
+Depends: openjdk-7-jre-headless, unzip
+Description: JBoss Application Server
+ JBoss 7.1.1 Final.  This is EOL and not supported and probably
+ contains bugs and security vulnerabilities.

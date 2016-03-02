@@ -1,0 +1,11 @@
+#!/bin/sh
+# Create jboss user if it doesn't exist
+USER=$(id -u jboss &>/dev/null)
+if [ ! $USER ]
+then
+        echo "Creating jboss user..."
+        useradd -d /opt/jboss -s /bin/sh -U jboss
+fi
+
+# Set permissions on /opt/jboss
+chown -R jboss:jboss /opt/jboss
